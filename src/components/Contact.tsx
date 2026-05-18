@@ -33,19 +33,21 @@ const contactLinks = [
 
 export const Contact = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!formRef.current) return;
-// TODO: fix key in ENV
-    emailjs
-      .sendForm(
-        "service_t7n0w8a",
-        "template_j67vxnv",
-        formRef.current,
-        "pPXM2ktdd2EUaQtT2"
-      )
+    // TODO: fix key in ENV
+    emailjs.sendForm(
+      serviceId,
+      templateId,
+      formRef.current,
+      publicKey
+    )
       .then(
         () => {
           alert("Message sent successfully");
@@ -59,7 +61,7 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="px-6 py-32">
+    <section id="contact" className="px-6 py-20 md:py-0">
       <div className="mx-auto max-w-7xl">
         <header className="max-w-3xl">
           <span className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">

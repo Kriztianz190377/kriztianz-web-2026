@@ -30,7 +30,14 @@ const projects = [
 
 export const Projects = () => {
     return (
-        <section id="projects" className="px-6 py-32">
+        <section id="projects" className="
+        mx-auto        
+        max-w-7xl
+        items-center
+        gap-16
+        lg:grid-cols-2
+        my-60
+        ">
             <div className="mx-auto max-w-7xl">
                 <header className="max-w-3xl">
                     <span className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">

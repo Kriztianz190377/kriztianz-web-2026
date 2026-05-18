@@ -1,39 +1,30 @@
-import Socials from "./Socials";
+
 
 
 export const Hero = () => {
 
   return (
 
-    <main
-      id="about"
+    <section id="about"
       className="
-      min-h-screen
-      px-6
-      pt-56
-      "
-    >
-
-      <section
-        className="
         mx-auto
         grid
         max-w-7xl
         items-center
         gap-16
         lg:grid-cols-2
+        my-60
         "
-      >
-<Socials />
-        {/* =========================
+    >
+      
+      {/* =========================
             LEFT SIDE
         ========================== */}
 
-        <div>
-         
+      <div>
 
-          <span
-            className="
+        <span
+          className="
             mb-6
             inline-flex
             rounded-full
@@ -46,12 +37,12 @@ export const Hero = () => {
             font-semibold
             text-primary
             "
-          >
-            Front-End Developer
-          </span>
+        >
+          Front-End Developer
+        </span>
 
-          <h1
-            className="
+        <h1
+          className="
             max-w-4xl
             text-5xl
             font-extrabold
@@ -60,56 +51,56 @@ export const Hero = () => {
             text-text-primary
             md:text-7xl
             "
-          >
-            Hi, I'm{" "}
+        >
+          Hi, I'm{" "}
 
-            <span className="text-primary">
-              Christian Castaneda
-            </span>
+          <span className="text-primary">
+            Christian Castaneda
+          </span>
 
-          </h1>
-          {/* =========================
+        </h1>
+        {/* =========================
               ABOUT
           ========================== */}
 
-          <p
-            className="
+        <p
+          className="
             mt-6
             max-w-2xl
             text-lg
             leading-8
             text-text-secondary
             "
-          >
-            I build modern, responsive and engaging web
-            experiences using React, TypeScript,
-            Tailwind CSS and Laravel.
-          </p>
-           <p
-            className="
+        >
+          I build modern, responsive and engaging web
+          experiences using React, TypeScript,
+          Tailwind CSS and Laravel.
+        </p>
+        <p
+          className="
             mt-5
             leading-8
             text-text-secondary
             "
-          >
-            I am a front-end developer focused on creating
-            clean, accessible and responsive interfaces.
-            My work combines modern UI design with solid
-            development practices.
-          </p>
+        >
+          I am a front-end developer focused on creating
+          clean, accessible and responsive interfaces.
+          My work combines modern UI design with solid
+          development practices.
+        </p>
 
-          <div
-            className="
+        <div
+          className="
             mt-8
             flex
             flex-wrap
             gap-4
             "
-          >
+        >
 
-            <a
-              href="#projects"
-              className="
+          <a
+            href="#projects"
+            className="
               rounded-2xl
               bg-primary
               px-7
@@ -119,13 +110,13 @@ export const Hero = () => {
               transition
               hover:-translate-y-1
               "
-            >
-              View Projects
-            </a>
+          >
+            View Projects
+          </a>
 
-            <a
-              href="#contact"
-              className="
+          <a
+            href="#contact"
+            className="
               rounded-2xl
               border
               border-[var(--border)]
@@ -137,20 +128,20 @@ export const Hero = () => {
               transition
               hover:-translate-y-1
               "
-            >
-              Contact Me
-            </a>
-
-          </div>
+          >
+            Contact Me
+          </a>
 
         </div>
 
-        {/* =========================
+      </div>
+
+      {/* =========================
             RIGHT SIDE
         ========================== */}
 
-        <div
-          className="
+      <div
+        className="
           rounded-[2rem]
           border
           border-[var(--border)]
@@ -160,23 +151,23 @@ export const Hero = () => {
           flex
           flex-col items-center
           "
-        >
+      >
 
-          {/* =========================
+        {/* =========================
               PHOTO
           ========================== */}
 
-          <div
-            className="
+        <div
+          className="
             relative
             flex
             justify-center
             max-w-[240px]
                         "
-          >
+        >
 
-            <div
-              className="
+          <div
+            className="
               absolute
               h-72
               w-72
@@ -185,52 +176,48 @@ export const Hero = () => {
               blur-3xl
               
               "
-            />
+          />
 
-            <img
-              src="/img/ME.png"
-              alt="Christian Castaneda"
-              className="
+          <img
+            src="/img/ME.png"
+            alt="Christian Castaneda"
+            className="
               relative
               z-10
               w-full
               max-w-md
               object-contain
               "
-            />
+          />
 
-          </div>
+        </div>
 
-          
 
-        
 
-         
-
-          {/* =========================
+        {/* =========================
               SKILLS
           ========================== */}
 
-          <div
-            className="
+        <div
+          className="
             mt-8
             flex
             flex-wrap
             gap-3
             "
-          >
+        >
 
-            {[
-              "React",
-              "TypeScript",
-              "Tailwind",
-              "Laravel",
-              "Vite",
-            ].map((skill) => (
+          {[
+            "React",
+            "TypeScript",
+            "Tailwind",
+            "Laravel",
+            "Vite",
+          ].map((skill) => (
 
-              <span
-                key={skill}
-                className="
+            <span
+              key={skill}
+              className="
                 rounded-full
                 border
                 border-[var(--border)]
@@ -240,19 +227,18 @@ export const Hero = () => {
                 font-semibold
                 text-primary
                 "
-              >
-                {skill}
-              </span>
+            >
+              {skill}
+            </span>
 
-            ))}
-
-          </div>
+          ))}
 
         </div>
 
-      </section>
+      </div>
 
-    </main>
+    </section>
+
 
   );
 };

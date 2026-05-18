@@ -4,6 +4,7 @@ import { Hero } from "./components/hero/Hero";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import Footer from "./components/Footer";
+import Socials from "./components/hero/Socials";
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
     <div >
       <Navbar toggleTheme={toggleTheme} />
       <Hero />
+      <Socials />
       <Projects/>
       <Contact/>
       <Footer/>
