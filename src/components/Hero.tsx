@@ -13,7 +13,7 @@ export const Hero = () => {
         items-center
         gap-16
         lg:grid-cols-2
-        my-60
+        my-40
         "
     >
       

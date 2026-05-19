@@ -61,7 +61,14 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="px-6 py-20 md:py-0">
+    <section id="contact" className="
+        mx-auto        
+        max-w-7xl
+        items-center
+        gap-16
+        lg:grid-cols-2
+        my-40
+        ">
       <div className="mx-auto max-w-7xl">
         <header className="max-w-3xl">
           <span className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">

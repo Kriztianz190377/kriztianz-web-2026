@@ -36,7 +36,7 @@ export const Projects = () => {
         items-center
         gap-16
         lg:grid-cols-2
-        my-60
+        my-40
         ">
             <div className="mx-auto max-w-7xl">
                 <header className="max-w-3xl">
